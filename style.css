@@ -1,0 +1,656 @@
+
+    :root {
+        --background-grad: linear-gradient(45deg, #1a2f3f, #7094ce);
+        --background: rgb(0, 0, 0,0.6);
+        --background-base: rgb(0, 0, 0, 0.8);
+        --background-9: rgb(0, 0, 0, 0.9);
+        --border-dark: rgb(0, 0, 0, 1);
+        --blur: blur(10px);
+        --background-revers: hsl(20, 42%, 90%);
+        --color-base-font: hsl(0, 0%, 100%);
+        --color-accent: rgb(197, 197, 197);
+        --color-accent-2: rgb(153, 153, 153);
+        --clr-atten: hsl(51, 82%, 64%);
+        --clr-delete: hsl(0, 100%, 50%);
+        --clr-orange: hsl(36, 79%, 37%);
+        --clr-orange-hl: hsl(41, 67%, 66%);
+        --clr-edit: hsl(113, 100%, 69%);
+        --clr-admin: hsl(239, 85%, 79%);
+        --color-base-font-revers: hsl(0, 0%, 19%);
+        --hammer-base: rgb(105, 105, 105);
+        --fill-pads: rgb(150, 150, 150);
+        --page-width: 950px;
+        --yellow: #c5b803;
+        --green: #01a81a;
+        --fnt-main: sans-serif;
+        --fnt-fant: fantasy;
+        --color: #1a2f3f;
+        --color1: #595959;
+        --color2: #308bc8;
+        --color3: #9f9f9f;
+        --delay: .5s;
+        --delay1: .25s;
+        --delay2: .5s;
+        --delay3: .75s;
+        --delay4: 1s;
+    }
+
+    *, *::before, *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    * {
+        font-family:sans-serif;
+        font-size: 1.1em;
+        color: var(--color-base-font);
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    ul {
+        font-size: .6em;
+    }
+
+    .small {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: .6em;
+    }
+
+    .padded {
+        margin: 1em;
+    }
+
+    .scroller {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        z-index: 99;
+        translate: -50% 50%;
+        animation: scrolling 4s 2s forwards;
+        opacity: 0;
+    }
+
+    @keyframes scrolling {
+        0%{translate: 100%; opacity: 0;}
+        10%{translate: -40%; opacity: 1;}
+        90%{translate: -60%; opacity: 1;}
+        100%{translate: -250%; opacity: 0;}
+    }
+
+    #a {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #b {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #c {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #d {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #e {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #f {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #g {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #h {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #i {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #j {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #k {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #l {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #m {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #n {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #o {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #p {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #q {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #r {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #s {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #t {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #u {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #v {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #w {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #x {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #y {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    #z {
+        position: relative;
+        background-color: var(--color3);
+    }
+
+    .word {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin: 0;
+    }
+
+    #word1 {
+        display: flex;
+        position: relative;
+    }
+
+    #word2 {
+        display: flex;
+        position: relative;
+    }
+
+    #word3 {
+        display: flex;
+        position: relative;
+    }
+
+    #word4 {
+        display: flex;
+        position: relative;
+    }
+
+    #word5 {
+        display: flex;
+        position: relative;
+    }
+
+    #word6 {
+        display: flex;
+        position: relative;
+    }
+
+    #w1L0 {
+        position: relative;
+        background-color: var(--color);
+    }
+
+    #w1L1 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay1);
+    }
+
+    #w1L2 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay2);
+    }
+
+    #w1L3 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay3);
+    }
+
+    #w1L4 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay4);
+    }
+
+    #w2L0 {
+        position: relative;
+        background-color: var(--color);
+    }
+
+    #w2L1 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay1);
+    }
+
+    #w2L2 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay2);
+    }
+
+    #w2L3 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay3);
+    }
+
+    #w2L4 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay4);
+    }
+
+    #w3L0 {
+        position: relative;
+        background-color: var(--color);
+    }
+
+    #w3L1 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay1);
+    }
+
+    #w3L2 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay2);
+    }
+
+    #w3L3 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay3);
+    }
+
+    #w3L4 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay4);
+    }
+
+    #w4L0 {
+        position: relative;
+        background-color: var(--color);
+    }
+
+    #w4L1 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay1);
+    }
+
+    #w4L2 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay2);
+    }
+
+    #w4L3 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay3);
+    }
+
+    #w4L4 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay4);
+    }
+
+    #w5L0 {
+        position: relative;
+        background-color: var(--color);
+    }
+
+    #w5L1 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay1);
+    }
+
+    #w5L2 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay2);
+    }
+
+    #w5L3 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay3);
+    }
+
+    #w5L4 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay4);
+    }
+
+    #w6L0 {
+        position: relative;
+        background-color: var(--color);
+    }
+
+    #w6L1 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay1);
+    }
+
+    #w6L2 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay2);
+    }
+
+    #w6L3 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay3);
+    }
+
+    #w6L4 {
+        position: relative;
+        background-color: var(--color);
+        animation-delay: var(--delay4);
+    }
+
+    .letter {
+        display: flex;
+        position: relative;
+        font-weight: bolder;
+        align-items: center;
+        place-content: center;
+        width: 50px;
+        height: 60px;
+        margin: 5px 3px;
+        background-color: #1a2f3f;
+        border-radius: 3px;
+        border: 1px solid rgb(125, 125, 125);
+    }
+
+    .true {
+        background-color: #009f40;
+    } 
+
+    .inWord {
+        background-color: #647e8c;
+    }
+
+    .keyboard {
+        display: flex;
+        position: relative;
+        align-items: center;
+        place-content: center;
+    }
+
+    .keys {
+        display: flex;
+        position: relative;
+        align-items: center;
+        place-content: center;
+        font-weight: bolder;
+        padding: 0;
+        width: 50px;
+        height: 60px;
+        margin: .2em .2em;
+        font-size: 1rem;
+        color: var(--color-base-font);
+        background-color: var(--color3);
+        border-radius: 3px;
+    } 
+    
+    .keys:hover {
+        cursor: pointer;
+        
+    }
+
+    .enterkey {
+        width: auto;
+        padding: 0 1.2em;
+    } 
+
+    .backkey {
+        width: auto;
+        padding: 0 1.2em;
+    } 
+
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        align-items: center;
+        align-content: center;
+        max-width: 800px;
+        margin: auto;
+        max-height: 900px;
+    }
+
+    .header {
+        display: block;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+        padding: .5em;
+        margin: .5em;
+    }
+
+    .title {
+        margin: .5em;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-content: center;
+        align-items: center;
+        margin: .5em;
+    }
+
+    .crow {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 90vh;
+        align-content: center;
+        align-items: center;
+    }
+
+    .list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .shake {
+        animation-name: shake;
+        animation-duration: .4s;
+    }
+
+    #news {
+        position: absolute;
+        left: 10px;
+        height: 35px;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    @keyframes shake {
+        0% {left: 0px;}
+        10% {left: 5px;}
+        20% {left: -5px;}
+        40% {left: 5px;}
+        60% {left: -5px;}
+        80% {left: 5px;}
+        90% {left: -5px;}
+        100% {left: 0px;}
+    }
+
+    .flip {
+        animation-name: flip;
+        animation-duration: var(--delay);
+        animation-direction: forwards;
+    }
+
+    @keyframes flip {
+        0% {
+            height: 100%;
+        }
+        50% {
+            height: 0%;
+        }
+        100% {
+            height: 100%; 
+        }
+    }
+
+    .modal {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(45deg, #1a2f3f, #7094ce);
+        padding: 1em;
+        max-width: 85ch;
+        animation: fadein 1s;
+        border: none;
+        border-radius: 5px;
+    }
+
+    @keyframes fadein {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    
+    .modal::backdrop{
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .close-button {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: #000000;
+        padding: .2em;
+        cursor: pointer;
+    }
+
+    .close-button {
+        opacity: 1;
+    }
+
+    .deets {
+        font-size: .8em;
+    }
+
+    @media screen and (max-width: 980px) {
+        .keys {
+            width: 30px;
+            height: 50px;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 0;
+        }
+        .enterkey {
+        
+            padding: 0 2em;
+        } 
+    
+        .backkey {
+        
+            padding: 0 1.6em;
+        } 
+
+        #news {
+            position: absolute;
+            left: 10px;
+            height: 30px;
+            top: 25px;
+            cursor: pointer;
+        }
+
+        .modal {
+            width: 92%;
+            top: 25%;
+        }
+
+        .padded {
+            margin: .5em;
+        }
+    }
